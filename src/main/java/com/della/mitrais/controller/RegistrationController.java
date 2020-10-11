@@ -22,11 +22,11 @@ public class RegistrationController {
 
 	private RegistrationService regService;
 	
-//	@Autowired(required = true)
-//	@Qualifier(value = "registrationService")
-//	public void setRegistrationService(RegistrationService reg) {
-//		this.regService = reg;
-//	}
+	@Autowired(required = true)
+	@Qualifier(value = "registrationService")
+	public void setRegistrationService(RegistrationService reg) {
+		this.regService = reg;
+	}
 	
 	
 	@RequestMapping(value = "/", method = RequestMethod.GET)

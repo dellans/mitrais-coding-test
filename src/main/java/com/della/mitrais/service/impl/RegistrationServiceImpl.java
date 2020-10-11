@@ -15,9 +15,9 @@ public class RegistrationServiceImpl implements RegistrationService {
 	@Autowired
 	private RegistrationDao regDao;
 	
-//	public void setRegistrationDao(RegistrationDao registrationDao){
-//		this.regDao = registrationDao;
-//	}
+	public void setRegistrationDao(RegistrationDao registrationDao){
+		this.regDao = registrationDao;
+	}
 	
 	@Override
 	@Transactional
